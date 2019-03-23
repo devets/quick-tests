@@ -24,5 +24,6 @@ class Button (Entity):
           self.image = Image("orangeButton-2.png")
         else:
           self.image = Image("yellowLemonVomitButton.png")
-        
-    
+
+    def pushed_button(self):
+        pass
