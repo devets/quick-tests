@@ -30,7 +30,7 @@ class World():
         qp.drawImage(QPoint(0,0), self.background)
 
         for e in self.entity_list:
-            if e.image is not None and e.isInRange(self.screen, 0):
+            if e.image is not None: # and e.isInRange(self.screen, 0):
                 qp.drawImage(QPoint(int(e.x * self.engine.scale),
                                     int(e.y * self.engine.scale)),
                                     e.getImage(self.engine.scale))

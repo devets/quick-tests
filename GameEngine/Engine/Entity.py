@@ -74,7 +74,7 @@ class Entity():
         if self.image == None:
             return None
 
-        return self.image.scaled(scale)
+        return self.image.getScaled(scale)
 
     def animationLoop(self):
         if self.animationCounter == self.animationDelay:
