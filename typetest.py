@@ -24,7 +24,7 @@ class Button (Entity):
         if buttonNum == 1:
           self.setImage(Image("beckyBlueButton.png"))
         elif buttonNum == 2:
-          self.setImage(Image("orangeButton-2.png"))
+          self.setImage(Image("orangeButton.png"))
         else:
           self.setImage(Image("yellowLemonVomitButton.png"))
         self.mouseDown = False
@@ -40,7 +40,7 @@ class Button (Entity):
             if self.buttonNum == 1:
                 self.setImage(Image("beckyBlueButton-2.png"))
             elif self.buttonNum == 2:
-                self.setImage(Image("orangeButton.png"))
+                self.setImage(Image("orangeButton-2.png"))
             else:
                 self.setImage(Image("yellowLemonVomitButton-2.png"))
                               
