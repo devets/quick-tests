@@ -39,10 +39,13 @@ class Button (Entity):
             self.pushed = True
             if self.buttonNum == 1:
                 self.setImage(Image("beckyBlueButton-2.png"))
+                print(BLUE)
             elif self.buttonNum == 2:
                 self.setImage(Image("orangeButton-2.png"))
-            else:
+                print(ORANGE)
+            elif self.buttonNum == 3:
                 self.setImage(Image("yellowLemonVomitButton-2.png"))
+                print(YELLOW)
                               
             
         else:
