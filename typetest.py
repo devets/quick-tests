@@ -9,9 +9,9 @@ class TypeTest (World):
 
     def __init__ (self, engine):
         super().__init__(engine)
-        self.addEntity(Button(1), 25, 50)
-        self.addEntity(Button(2), (750 + 25) / 2, 50)
-        self.addEntity(Button(3), 750, 50)
+        self.addEntity(Button(1), 125, 150)
+        self.addEntity(Button(2), (750 + 125) / 2, 150)
+        self.addEntity(Button(3), 750, 150)
 
     def run(self):
         pass
