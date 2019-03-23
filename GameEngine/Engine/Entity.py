@@ -12,6 +12,8 @@ class Entity():
         self.image = None
         self.world = None
 
+        self.text = None    #this should remain none unless you want the object to be rendered as text.
+
         self.animated = False
         self.animationDelay = None
         self.animationCounter = 0
