@@ -68,6 +68,8 @@ class Entity():
         if not isinstance(image, Image):
             raise TypeError("Only accepts objects of type Image")
         self.image = image
+        self.width = image.size().width()
+        self.height = image.size().height()
 
     def getImage(self, scale):
         """Returns the image associated with the entity. \n
