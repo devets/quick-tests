@@ -81,11 +81,11 @@ class World():
 
     def mouseX(self):
         """Get mouse X position"""
-        return QCursor.pos().x()
+        return QCursor.pos().x() / self.engine.scale
 
     def mouseY(self):
         """Get mouse Y position"""
-        return QCursor.pos().y()
+        return QCursor.pos().y() / self.engine.scale
 
     def isKeyPressed(self, key):
         """Check if a key is pressed\n
