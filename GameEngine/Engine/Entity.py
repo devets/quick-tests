@@ -23,9 +23,9 @@ class Entity():
         if not isinstance(entity, Entity):
             raise TypeError("Only accepts objects of type Entity")
         if (self.x <= entity.x + entity.width and
-            self.x + self.width <= entity.x and
+            self.x + self.width >= entity.x and
             self.y <= self.x + entity.height and
-            self.y + self.height <= entity.y):
+            self.y + self.height >= entity.y):
             return True
         return False
 
